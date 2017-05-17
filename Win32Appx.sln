@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26430.6
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinForms461", "WinForms461\WinForms461.csproj", "{F176BA15-2F79-4F71-A996-5488CABA0E58}"
-EndProject
 Project("{262852C6-CD72-467D-83FE-5EEB1973A190}") = "WinForms461.Package", "WinForms461.Package\WinForms461.Package.jsproj", "{80A4B17D-ECE3-49F9-9237-E0D0E555C336}"
 EndProject
 Global
@@ -19,22 +17,6 @@ Global
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Debug|ARM.Build.0 = Debug|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Debug|x64.Build.0 = Debug|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Debug|x86.Build.0 = Debug|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Release|ARM.ActiveCfg = Release|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Release|ARM.Build.0 = Release|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Release|x64.ActiveCfg = Release|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Release|x64.Build.0 = Release|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Release|x86.ActiveCfg = Release|Any CPU
-		{F176BA15-2F79-4F71-A996-5488CABA0E58}.Release|x86.Build.0 = Release|Any CPU
 		{80A4B17D-ECE3-49F9-9237-E0D0E555C336}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{80A4B17D-ECE3-49F9-9237-E0D0E555C336}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{80A4B17D-ECE3-49F9-9237-E0D0E555C336}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
