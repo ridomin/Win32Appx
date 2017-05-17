@@ -8,6 +8,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Humanizer;
 
 namespace WinForms461
 {
@@ -25,6 +26,7 @@ namespace WinForms461
             textBox1.Text += $"WinForms: {this.FormBorderStyle.GetType().Assembly.Location} {Environment.NewLine}";
             textBox1.Text += $"ThisApp: {Assembly.GetExecutingAssembly().Location} {Environment.NewLine}";
             textBox1.Text += $"Architecture: {GetArch()}{Environment.NewLine}";
+            textBox1.Text += $"Uptime: {TimeSpan.FromMilliseconds(Environment.TickCount).Humanize()  }";
         }
 
         string GetArch()
