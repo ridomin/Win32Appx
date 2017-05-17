@@ -20,9 +20,16 @@ namespace WinForms461
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            label1.Text = Assembly.GetExecutingAssembly().ImageRuntimeVersion;
-            label2.Text = this.FormBorderStyle.GetType().Assembly.Location;
-            label3.Text = Assembly.GetExecutingAssembly().Location;
+
+            textBox1.Text = $"ImageRuntime: {Assembly.GetExecutingAssembly().ImageRuntimeVersion} {Environment.NewLine}";
+            textBox1.Text += $"WinForms: {this.FormBorderStyle.GetType().Assembly.Location} {Environment.NewLine}";
+            textBox1.Text += $"ThisApp: {Assembly.GetExecutingAssembly().Location} {Environment.NewLine}";
+            textBox1.Text += $"Architecture: {GetArch()}{Environment.NewLine}";
+        }
+
+        string GetArch()
+        {
+            return IntPtr.Size == 4 ? "x86" : "x64";
         }
     }
 }
