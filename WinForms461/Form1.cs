@@ -23,6 +23,7 @@ namespace WinForms461
             label1.Text = Assembly.GetExecutingAssembly().ImageRuntimeVersion;
             label2.Text = this.FormBorderStyle.GetType().Assembly.Location;
             label3.Text = Assembly.GetExecutingAssembly().Location;
+            label4.Text = IntPtr.Size.ToString();
         }
     }
 }
