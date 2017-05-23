@@ -8,13 +8,14 @@
     <Logo>Assets\storelogo.png</Logo>
   </Properties>
   <Dependencies>
-    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.0.0" MaxVersionTested="10.0.0.0" />
+      <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.14393.0" MaxVersionTested="10.0.14393.0"/>
+      <TargetDeviceFamily Name="Windows.desktop" MinVersion="10.0.14393.0" MaxVersionTested="10.0.14393.0"/>
   </Dependencies>
   <Resources>
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" Executable="WinForms461.exe" EntryPoint="Windows.FullTrustApplication">
+    <Application Id="App" Executable="DesktopBinaries\WinForms461.exe" EntryPoint="Windows.FullTrustApplication">
       <uap:VisualElements DisplayName="WinForms461" Description="WinForms461" BackgroundColor="transparent" Square150x150Logo="Assets\Square150x150Logo.png" Square44x44Logo="Assets\Square44x44Logo.png">
         <uap:DefaultTile Square310x310Logo="Assets\LargeTile.png" Wide310x150Logo="Assets\WideTile.png" Square71x71Logo="Assets\SmallTile.png">
         </uap:DefaultTile>
