@@ -11,6 +11,7 @@ using System.Windows.Forms;
 using Humanizer;
 using Windows.Storage;
 using Windows.ApplicationModel.Background;
+using System.IO;
 
 namespace WinForms461
 {
@@ -28,7 +29,21 @@ namespace WinForms461
             textBox1.Text += $"WinForms: {this.FormBorderStyle.GetType().Assembly.Location} {Environment.NewLine}";
             textBox1.Text += $"ThisApp: {Assembly.GetExecutingAssembly().Location} {Environment.NewLine}";
             textBox1.Text += $"Architecture: {GetArch()}{Environment.NewLine}";
-            textBox1.Text += $"Uptime: {TimeSpan.FromMilliseconds(Environment.TickCount).Humanize()  }";
+            textBox1.Text += $"Uptime: {TimeSpan.FromMilliseconds(Environment.TickCount).Humanize()}{Environment.NewLine}";
+            textBox1.Text += $"LocalData: {GetLocalFileList()}{Environment.NewLine}";
+                            
+        }
+
+        string  GetLocalFileList()
+        {
+            string result  = string.Empty;
+
+            var di = new DirectoryInfo(ApplicationData.Current.LocalFolder.Path);
+            foreach (var f in di.GetFiles())
+            {
+                result += $"{f.Name} ";
+            }
+            return result;
         }
 
         string GetArch()

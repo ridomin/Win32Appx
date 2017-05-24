@@ -65,6 +65,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\HttpBGTask\HttpBGTask.csproj" />
+    <ProjectReference Include="..\ShareUIApp\ShareUIApp.csproj" />
     <ProjectReference Include="..\WinForms461\WinForms461.csproj" />
   </ItemGroup>
   <ItemGroup>
