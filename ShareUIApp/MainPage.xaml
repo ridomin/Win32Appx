@@ -22,7 +22,7 @@
             </LinearGradientBrush>
         </Grid.Background>
         <StackPanel>
-            <Button Content="Share to WPF app" Click="Button_Click"/>
+            <Button Content="Share to WinFORMS app" Click="Button_Click"/>
             <TextBlock x:Name="tbFileName" />
             <Image x:Name="img"/>
         </StackPanel>
