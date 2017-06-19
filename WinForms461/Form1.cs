@@ -9,6 +9,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Humanizer;
+using Windows.Storage;
+using Windows.ApplicationModel.Background;
 
 namespace WinForms461
 {
@@ -32,6 +34,13 @@ namespace WinForms461
         string GetArch()
         {
             return IntPtr.Size == 4 ? "x86" : "x64";
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ApplicationData.Current.LocalSettings.Values["UrlToVerify"] = "http://dev.windows.com";
+            BGTaskRegister.RegisterBackgroundTask("HttpBGTimeTrigger", new TimeTrigger(15, false));
+
         }
     }
 }
