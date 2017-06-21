@@ -150,6 +150,12 @@
       <Version>5.2.3</Version>
     </PackageReference>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HttpBGTask\HttpBGTask.csproj">
+      <Project>{7494c6b7-e004-460c-aacc-92676f0f424b}</Project>
+      <Name>HttpBGTask</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>

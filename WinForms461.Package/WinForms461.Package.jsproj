@@ -55,7 +55,7 @@
     <PackageCertificateKeyFile>WinForms461.Package_TemporaryKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
     <AppxBundle>Always</AppxBundle>
-    <AppxBundlePlatforms>x86</AppxBundlePlatforms>
+    <AppxBundlePlatforms>x64</AppxBundlePlatforms>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -64,7 +64,6 @@
     <None Include="WinForms461.Package_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\HttpBGTask\HttpBGTask.csproj" />
     <ProjectReference Include="..\ShareUIApp\ShareUIApp.csproj" />
     <ProjectReference Include="..\WinForms461\WinForms461.csproj" />
   </ItemGroup>
