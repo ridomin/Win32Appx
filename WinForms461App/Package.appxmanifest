@@ -31,7 +31,7 @@
 
   <Applications>
     <Application Id="App"
-      Executable="DesktopBinaries\VFS\Program Files (x86)\RidoCo\WinForms461\WinForms461.exe"
+      Executable="VFS\Program Files (x86)\RidoCo\WinForms461\WinForms461.exe"
       EntryPoint="Windows.FullTrustApplication">
       <uap:VisualElements
         DisplayName="WinForms461App"
