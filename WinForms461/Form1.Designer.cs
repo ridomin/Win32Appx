@@ -33,16 +33,17 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.webView1 = new Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView();
+            ((System.ComponentModel.ISupportInitialize)(this.webView1)).BeginInit();
             this.SuspendLayout();
             // 
             // textBox1
             // 
-            this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.textBox1.Location = new System.Drawing.Point(0, 100);
+            this.textBox1.Location = new System.Drawing.Point(1, 66);
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(877, 199);
+            this.textBox1.Size = new System.Drawing.Size(877, 90);
             this.textBox1.TabIndex = 3;
             // 
             // label1
@@ -85,11 +86,22 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // webView1
+            // 
+            this.webView1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.webView1.Location = new System.Drawing.Point(0, 177);
+            this.webView1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webView1.Name = "webView1";
+            this.webView1.Size = new System.Drawing.Size(1015, 413);
+            this.webView1.Source = new System.Uri("https://www.whatbrowser.org/", System.UriKind.Absolute);
+            this.webView1.TabIndex = 8;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(877, 299);
+            this.ClientSize = new System.Drawing.Size(1015, 590);
+            this.Controls.Add(this.webView1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -98,6 +110,7 @@
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.webView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,6 +122,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private Microsoft.Toolkit.Win32.UI.Controls.WinForms.WebView webView1;
     }
 }
 
